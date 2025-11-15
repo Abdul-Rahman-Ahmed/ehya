@@ -1,3 +1,4 @@
+/* frames for anmiations */
 @keyframes arrowMove {
   50% {
     transform: translatex(10px);
@@ -131,7 +132,7 @@ button {
 .secondary-btn {
   color: var(--white-color);
   &.blue {
-    color: var(--secondary-color);
+    color: var(--primary-color);
   }
   background-color: transparent;
   transition: 1s;
@@ -160,30 +161,63 @@ button {
   line-height: 1.8;
 }
 
-.text {
-  h2 {
-    color: var(--secondary-color);
-    font-size: 2.5em;
-    @media (max-width: 768px) {
-      font-size: 2em;
-      @media (max-width: 425px) {
-        font-size: 1.5em;
-      }
+h2 {
+  color: var(--secondary-color);
+  font-size: 2.5em;
+  @media (max-width: 768px) {
+    font-size: 2em;
+    @media (max-width: 425px) {
+      font-size: 1.5em;
+    }
+  }
+}
+
+.paragraph {
+  margin-block: 40px;
+  line-height: 1.8;
+  font-size: 0.9em;
+  font-weight: bold;
+  letter-spacing: 0.3px;
+  color: #90a3b4;
+  @media (max-width: 768px) {
+    font-size: 0.8em;
+    @media (max-width: 425px) {
+      font-size: 0.7em;
+    }
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  @media (min-width: 769px) {
+    .first-part,
+    .second-part {
+      width: 40%;
     }
   }
 
-  h2 ~ p {
-    margin-block: 40px;
-    line-height: 1.8;
-    font-size: 0.9em;
-    font-weight: bold;
-    letter-spacing: 0.3px;
-    color: #90a3b4;
-    @media (max-width: 768px) {
-      font-size: 0.8em;
-      @media (max-width: 425px) {
-        font-size: 0.7em;
-      }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
+    &.landings {
+      flex-direction: column-reverse;
     }
+    .first-part,
+    .second-part {
+      width: 100%;
+      text-align: center;
+    }
+    &.landings .first-part {
+      width: 70%;
+    }
+  }
+}
+
+.img {
+  img {
+    width: 100%;
   }
 }

@@ -19,7 +19,7 @@
   <body>
     <header>
       <div class="logo"><img src="./assets/Logo.png" /></div>
-      <ul>
+      <ul class="flex">
         <li>
           <a href="#home">home</a>
         </li>
@@ -33,7 +33,7 @@
           <a href="#does">does</a>
         </li>
         <li>
-          <a href="#help">help</a>
+          <a href="#testimonals">testimonals</a>
         </li>
         <li>
           <button class="primary-btn">login</button>
@@ -42,8 +42,8 @@
       <i class="fa-solid fa-bars bars"></i>
     </header>
 
-    <main class="container">
-      <div class="text">
+    <main class="container" id="home">
+      <div class="first-part">
         <h1>We help you grow your business faster</h1>
         <img src="./assets/main/blue-arrow.png" alt="blue arrow" />
         <p>
@@ -58,7 +58,7 @@
           </button>
         </div>
       </div>
-      <div class="img">
+      <div class="second-part img">
         <img src="./assets/main/product-img.png" alt="prodcut image" />
       </div>
     </main>
@@ -80,14 +80,14 @@
       </p>
     </section>
 
-    <section class="landings container">
-      <div class="img">
+    <section class="landings container flex" id="landings">
+      <div class="first-part img">
         <img src="./assets/landings/two-phones.png" />
         <img src="./assets/landings/circle-line.png" />
       </div>
-      <div class="text">
+      <div class="second-part">
         <h2>Measure Impressions and Reach Post</h2>
-        <p>
+        <p class="paragraph">
           Graphs displaying your performance for metrics like follower
           evolution, average engagement rate per post and reach and impressions
           to give you the insights.
@@ -99,10 +99,10 @@
       </div>
     </section>
 
-    <section class="pages container">
-      <div class="text">
+    <section class="pages container flex" id="pages">
+      <div class="first-part">
         <h2>Schedule Your Post Whenever You Want</h2>
-        <p>
+        <p class="paragraph">
           Publish your content automatically to ensure that your content reaches
           the right people. Built-in features such as
         </p>
@@ -126,10 +126,139 @@
           <i class="fa fa-long-arrow-right arrow"></i>
         </button>
       </div>
-      <div class="img">
-        <img src="/assets/pages/Device.png" />
+      <div class="second-part img">
+        <img src="./assets/pages/Device.png" />
       </div>
     </section>
+
+    <section class="hashtag container" id="does">
+      <div class="first-part">
+        <h2>Track any hashtag(s) Performance</h2>
+        <p class="paragraph">
+          Don’t waste time on search manual tasks. Let Automation do it for you.
+          Simplify workflows, reduce errors, and save time.
+        </p>
+      </div>
+      <div class="second-part cards flex">
+        <div class="card">
+          <div class="logo"><img src="./assets/hashtag/Group30.png" /></div>
+          <h3>Hashtag Growth</h3>
+          <p class="paragraph">
+            Follow a hashtag growth total posts, videos and assets.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="logo">
+            <img src="./assets/hashtag/Group301.png" />
+          </div>
+          <h3>Influencers by Hashtag</h3>
+          <p class="paragraph">
+            Identify the most influential people posting with your hashtag.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="logo">
+            <img src="./assets/hashtag/Group302.png" />
+          </div>
+          <h3>Most Influental Post</h3>
+          <p class="paragraph">
+            See the most influential posts on hashtag you are following on.
+          </p>
+        </div>
+        <div class="card">
+          <div class="logo">
+            <img src="./assets/hashtag/Group303.png" />
+          </div>
+          <h3>Hashtag Location</h3>
+          <p class="paragraph">
+            Visualize where people are posting using your hashtag made.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonals container flex" id="testimonals">
+      <div class="first-part">
+        <h2>Powering the growth of 100+ business & retailers in Indonesia.</h2>
+        <p class="paragraph">
+          From single store, startups, to large multi-store brands.
+        </p>
+      </div>
+      <div class="second-part">
+        <div class="stars">
+          <i class="fa-classic fa-solid fa-star"></i>
+          <i class="fa-classic fa-solid fa-star"></i>
+          <i class="fa-classic fa-solid fa-star"></i>
+          <i class="fa-classic fa-solid fa-star"></i>
+          <i class="fa-classic fa-solid fa-star"></i>
+        </div>
+        <p class="paragraph">
+          “With Ehya, we’re able to easily track our performance in full detail.
+          It’s become an essential tool for us to grow and engage with our
+          audience.”
+        </p>
+        <div class="person flex">
+          <img src="./assets/testimonals/Photo.png" />
+          <div class="name">
+            <h2>Jaquon Hart</h2>
+            <p>Digital Marketing Executive, Hypebeast</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container">
+      <div class="about">
+        <img src="./assets/Logo.png" />
+        <p>Build a modern and creative website with crealand</p>
+        <div class="socials">
+          <i class="icon fa-brands fa- fa-facebook"></i>
+          <i class="icon fa-brands fa- fa-x-twitter"></i>
+          <i class="icon fa-brands fa- fa-instagram"></i>
+          <i class="icon fa-brands fa- fa-linkedin"></i>
+        </div>
+      </div>
+      <div class="links">
+        <h2>Product</h2>
+        <div>
+          <p>Landingpage</p>
+          <p>Features</p>
+          <p>Documentation</p>
+          <p>Referral Program</p>
+          <p>Pricing</p>
+        </div>
+      </div>
+      <div class="links">
+        <h2>Services</h2>
+        <div>
+          <p>Documentation</p>
+          <p>Design</p>
+          <p>Themes</p>
+          <p>Illustrations</p>
+          <p>UI Kit</p>
+        </div>
+      </div>
+      <div class="links">
+        <h2>Company</h2>
+        <div>
+          <p>About</p>
+          <p>Terms</p>
+          <p>Privacy Policy</p>
+          <p>Careers</p>
+        </div>
+      </div>
+      <div class="links">
+        <h2>More</h2>
+        <div>
+          <p>Documentation</p>
+          <p>License</p>
+          <p>Changelog</p>
+        </div>
+      </div>
+    </footer>
+    <div class="copyright">Copyright &copy; 2025. Created with love.</div>
   </body>
   <script src="./master.js"></script>
 </html>
